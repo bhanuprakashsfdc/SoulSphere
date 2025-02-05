@@ -5,6 +5,7 @@
   --dusty-red: #b55a4c;
   --dark-brown: #3d2c21;
   --text-white: #ffffff;
+  
 }
 
 body {
@@ -46,6 +47,121 @@ body {
   text-align: center;
   padding: 10px 0;
 }
+
+.header {
+  background-color: var(--rich-brown);
+  color: var(--text-white);
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%; 
+}
+
+.nav-actions a {
+  color: var(--text-white);
+  padding-left: 20px;
+}
+
+.nav-actions .icon-search, .icon-user {
+  font-size: 20px;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: var(--text-white);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  color: var(--warm-beige);
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--dusty-red);
+}
+
+.footer {
+  background-color: var(--dark-brown);
+  color: var(--warm-beige);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-statement {
+  flex: 1;
+  margin: 10px;
+}
+
+.social-media-icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+  color: var(--text-white);
+  font-size: 24px;
+}
+
+.contact-info {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid var(--warm-beige);
+  padding-top: 10px;
+}
+
+.icon-facebook, .icon-twitter, .icon-instagram {
+  /* Add specific icon styles or use a font library like FontAwesome */
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
